@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+
+}
+::placeholder{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.weather{
+  width: 35rem;
+  height: 28rem;
+  /* background-color: rgb(67, 67, 67); */
+  background-image: linear-gradient(45deg, #fd94ec, #67a2fc);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-around;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather_location{
+  font-size: 2rem;
+  font-weight: 500;
 }
+.info_section{
+  display: block;
+}
+.deg_section{
+  display: block;
+}
+.weather_degrees{
+  font-size: 3rem;
+  font-weight: 100;
+  margin-left: 8rem;
+}
+
+.weather_description{
+  display: flex;
+  align-items: center;
+}
+
+
+.weather_icon{
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.weather_description * h4{
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-right: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.weather_date{
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(254, 254, 254);
+}
+
+.weather_display{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+  height: 17rem;
+}
+
+
